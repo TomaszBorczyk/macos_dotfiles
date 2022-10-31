@@ -121,6 +121,9 @@ launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/nul
 # Enable lid wakeup
 sudo pmset -a lidwake 1
 
+# disable boot on lid open
+sudo nvram AutoBoot=%03
+
 # Restart automatically on power loss
 sudo pmset -a autorestart 1
 
