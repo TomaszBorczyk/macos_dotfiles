@@ -1,0 +1,3 @@
+alias wallpaper_change=/Users/tomaszborczyk/home/scripts/wallpaper_change/set_wallpaper.sh
+alias c=clear
+alias fuck='sudo $(fc -ln -1)'
