@@ -8,6 +8,7 @@ tap 'nicoverbruggen/homebrew-cask'
 # Binaries
 brew 'tree'
 brew 'htop'
+brew 'nano'
 brew 'bash' # Latest Bash version
 brew 'coreutils' # Those that come with macOS are outdated
 brew 'ffmpeg'
