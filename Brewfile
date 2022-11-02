@@ -22,6 +22,7 @@ brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
 brew 'imagemagick'
 
 # Development
+cask 'pycharm'
 brew 'nginx'
 brew 'node'
 cask 'vagrant'
