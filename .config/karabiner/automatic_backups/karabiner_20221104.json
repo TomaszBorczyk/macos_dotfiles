@@ -348,27 +348,6 @@
                                 "type": "basic"
                             }
                         ]
-                    },
-                    {
-                        "description": "delete key simulation at f11",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "f11"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "delete_or_backspace",
-                                        "modifiers": [
-                                            "fn",
-                                            "left_alt"
-                                        ],
-                                        "repeat": false
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
                     }
                 ]
             },
@@ -567,16 +546,6 @@
                     "to": [
                         {
                             "key_code": "left_control"
-                        }
-                    ]
-                },
-                {
-                    "from": {
-                        "key_code": "non_us_backslash"
-                    },
-                    "to": [
-                        {
-                            "key_code": "grave_accent_and_tilde"
                         }
                     ]
                 },
