@@ -1,3 +1,8 @@
 alias wallpaper_change=/Users/tomaszborczyk/home/scripts/wallpaper_change/set_wallpaper.sh
 alias c=clear
 alias fuck='sudo $(fc -ln -1)'
+
+# use to copy output from command, eg "cat file.txt | clip"
+alias clip=pbcopy
+
+alias python=/opt/homebrew/bin/python3
