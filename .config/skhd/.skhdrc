@@ -1,0 +1,13 @@
+# spawn kitty
+lcmd + lalt - l : /Applications/kitty.app/Contents/MacOS/kitty --single-instance
+
+
+# toggle fullscreen
+lcmd + lalt - f : yabai -m window --toggle zoom-fullscreen
+
+# toggle float
+fn - t : yabai -m window --toggle float
+
+# shift + alt - h : yabai -m window --toggle zoom-fullscreen
+
+# shift + alt - h : yabai -m window --warp west
