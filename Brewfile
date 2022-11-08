@@ -20,6 +20,8 @@ brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
 
 # Utils
 brew 'imagemagick'
+cask 'shottr'
+brew 'watch'
 
 # Development
 cask 'pycharm'
@@ -40,6 +42,7 @@ cask 'hammerspoon'
 cask 'alt-tab'
 cask 'karabiner-elements'
 cask 'rectangle'
+cask 'amethyst'
 
 # Apps
 cask 'google-chrome'
