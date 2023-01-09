@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.witkacy.make_coffee</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/tomaszborczyk/home/Projects/macos_dotfiles/make_coffe.sh</string>
+    </array>
+    <key>StartInterval</key>
+    <integer>61</integer>
+</dict>
+</plist>
