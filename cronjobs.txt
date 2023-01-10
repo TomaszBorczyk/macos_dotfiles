@@ -1,0 +1,2 @@
+* * * * * /Users/tomaszborczyk/home/Projects/macos_dotfiles/make_coffee.sh
+

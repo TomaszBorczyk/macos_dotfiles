@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 sudo scutil --set ComputerName "Witkacy"
 sudo scutil --set HostName "Witkacy"
 sudo scutil --set LocalHostName "Witkacy"

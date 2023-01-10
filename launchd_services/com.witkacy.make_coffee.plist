@@ -6,9 +6,9 @@
     <string>com.witkacy.make_coffee</string>
     <key>ProgramArguments</key>
     <array>
-        <string>/Users/tomaszborczyk/home/Projects/macos_dotfiles/make_coffe.sh</string>
+        <string>/Users/tomaszborczyk/home/Projects/macos_dotfiles/make_coffee.sh</string>
     </array>
     <key>StartInterval</key>
-    <integer>61</integer>
+    <integer>3599</integer>
 </dict>
 </plist>

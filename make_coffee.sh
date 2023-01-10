@@ -1,1 +1,3 @@
-caffeinate -d -t 60
+#!/usr/bin/env bash
+
+caffeinate -d -t 61
