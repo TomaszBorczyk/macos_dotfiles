@@ -1,8 +1,35 @@
 alias wallpaper_change=/Users/tomaszborczyk/home/scripts/wallpaper_change/set_wallpaper.sh
 alias c=clear
+alias hc='printf "\ec\e[3J"'
 alias fuck='sudo $(fc -ln -1)'
 
 # use to copy output from command, eg "cat file.txt | clip"
 alias clip=pbcopy
 
-alias python=/opt/homebrew/bin/python3
+#alias python=/opt/homebrew/bin/python3.11
+#alias python=/opt/homebrew/bin/python3
+alias python=/opt/homebrew/opt/python@3.10/bin/python3.10
+alias python3=/opt/homebrew/opt/python@3.10/bin/python3.10
+
+alias get_token=/Users/tomaszborczyk/home/Infermedica/get_token/get_token.sh
+
+function cmd_success() {
+	say "Done"
+}
+
+function cmd_failure() {
+	say "Failure"
+}
+
+
+function docker_compose_override() {
+	case $1 in
+   		build|up)
+   			docker-compose $@ && cmd_success || cmd_failure;;
+  		*)
+    		command docker-compose "$@";;
+	esac
+
+}
+
+alias docker-compose=docker_compose_override

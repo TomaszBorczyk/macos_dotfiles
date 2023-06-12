@@ -19,7 +19,8 @@
                   {
                      "type":"frontmost_application_if",
                      "bundle_identifiers":[
-                        "com.jetbrains.pycharm"
+                        "com.jetbrains.pycharm",
+                        "com.jetbrains.intellij.ce"
                      ]
                   }
                ],
