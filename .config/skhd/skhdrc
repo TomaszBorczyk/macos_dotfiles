@@ -1,0 +1,44 @@
+# spawn kitty
+cmd + shift - l : /opt/homebrew/bin/kitty --single-instance
+
+
+# ctrl tab for chrome
+cmd - tab [
+	"google chrome" : skhd -k "ctrl - tab"
+]
+
+cmd + shift - tab [
+	"google chrome" : skhd -k "ctrl + shift - tab"
+]
+
+# delete simulation
+f11 : skhd -k "delete"
+
+
+# kitty terminal normal commands:
+cmd - c [
+	"kitty" : skhd -k "ctrl - c"
+]
+cmd - r [
+	"kitty" : skhd -k "ctrl - r"
+]
+
+
+# word delete
+cmd - backspace : skhd -k "alt - backspace"
+
+# word highlight
+cmd + shift - left : skhd -k "alt + shift - left"
+cmd + shift - right : skhd -k "alt + shift - right"
+
+
+# word jump
+cmd - left : skhd -k "alt - left"
+cmd - right : skhd -k "alt - right"
+
+
+####  pycharm  ####
+# context menu
+cmd - space [
+	"pycharm" : skhd -k "alt - space"
+]
