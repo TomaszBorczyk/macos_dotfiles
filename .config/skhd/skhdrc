@@ -1,28 +1,10 @@
-# spawn kitty
-cmd + shift - l : /opt/homebrew/bin/kitty --single-instance
 
 
-# ctrl tab for chrome
-cmd - tab [
-	"google chrome" : skhd -k "ctrl - tab"
-]
-
-cmd + shift - tab [
-	"google chrome" : skhd -k "ctrl + shift - tab"
-]
-
-# delete simulation
+###################
+##### global #####
+###################
+# delete simulation (forward)
 f11 : skhd -k "delete"
-
-
-# kitty terminal normal commands:
-cmd - c [
-	"kitty" : skhd -k "ctrl - c"
-]
-cmd - r [
-	"kitty" : skhd -k "ctrl - r"
-]
-
 
 # word delete
 cmd - backspace : skhd -k "alt - backspace"
@@ -31,13 +13,62 @@ cmd - backspace : skhd -k "alt - backspace"
 cmd + shift - left : skhd -k "alt + shift - left"
 cmd + shift - right : skhd -k "alt + shift - right"
 
-
 # word jump
 cmd - left : skhd -k "alt - left"
 cmd - right : skhd -k "alt - right"
 
 
-####  pycharm  ####
+#####################
+##### shortcuts #####
+#####################
+
+# spawn kitty
+#cmd + shift - l : /opt/homebrew/bin/kitty --single-instance
+
+
+##################
+##### chrome #####
+##################
+# text tab
+cmd - tab [
+	"google chrome" : skhd -k "ctrl - tab"
+]
+
+# previous tab
+cmd + shift - tab [
+	"google chrome" : skhd -k "ctrl + shift - tab"
+]
+
+# go back
+alt - left [
+	"google chrome" : skhd -k "cmd - 0x21"
+]
+
+# go forward
+alt - right [
+	"google chrome" : skhd -k "cmd - 0x1E"
+]
+
+
+
+##################
+##### kitty  #####
+##################
+#  kitty terminal normal commands:
+cmd - c [
+	"kitty" : skhd -k "ctrl - c"
+]
+cmd - r [
+	"kitty" : skhd -k "ctrl - r"
+]
+cmd - w [
+	"kitty" : skhd -k "ctrl - w"
+]
+
+
+####################
+##### pycharm  #####
+####################
 # context menu
 cmd - space [
 	"pycharm" : skhd -k "alt - space"

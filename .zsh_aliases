@@ -1,4 +1,4 @@
-alias wallpaper_change=/Users/tomaszborczyk/home/scripts/wallpaper_change/set_wallpaper.sh
+alias wallpaper_change="${HOME}/home/Projects/macos_dotfiles/scripts/wallpaper_change/set_wallpaper.sh"
 alias c=clear
 alias hc='printf "\ec\e[3J"'
 alias fuck='sudo $(fc -ln -1)'
@@ -11,8 +11,6 @@ alias clip=pbcopy
 #alias python=/opt/homebrew/opt/python@3.10/bin/python3.10
 alias pyt=/opt/homebrew/opt/python@3.10/bin/python3.10
 alias python=/opt/homebrew/opt/python@3.10/bin/python3.10
-
-#alias get_token=/Users/tomaszborczyk/home/Infermedica/get_token/get_token.sh
 
 function cmd_success() {
 	say "Done"
