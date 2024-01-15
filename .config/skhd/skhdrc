@@ -40,14 +40,14 @@ cmd + shift - tab [
 ]
 
 # go back
-alt - left [
-	"google chrome" : skhd -k "cmd - 0x21"
-]
-
-# go forward
-alt - right [
-	"google chrome" : skhd -k "cmd - 0x1E"
-]
+# alt - left [
+	# "google chrome" : skhd -k "cmd - 0x21"
+# ]
+# 
+# # go forward
+# alt - right [
+	# "google chrome" : skhd -k "cmd - 0x1E"
+# ]
 
 
 
@@ -64,6 +64,15 @@ cmd - r [
 cmd - w [
 	"kitty" : skhd -k "ctrl - w"
 ]
+
+# alt - left [
+	# "kitty" : skhd -k "ctrl + shift - left"
+# ]
+# alt - right [
+	# "kitty" : skhd -k "ctrl + shift - right"
+# ]
+
+
 
 
 ####################

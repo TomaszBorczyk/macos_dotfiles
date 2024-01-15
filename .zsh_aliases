@@ -6,11 +6,15 @@ alias fuck='sudo $(fc -ln -1)'
 # use to copy output from command, eg "cat file.txt | clip"
 alias clip=pbcopy
 
+# docker
+#alias docker=podman
+
 #alias python=/opt/homebrew/bin/python3.11
 #alias python=/opt/homebrew/bin/python3
 #alias python=/opt/homebrew/opt/python@3.10/bin/python3.10
 alias pyt=/opt/homebrew/opt/python@3.10/bin/python3.10
 alias python=/opt/homebrew/opt/python@3.10/bin/python3.10
+alias git_clean="${HOME}/home/Projects/macos_dotfiles/scripts/remove_local_branches_not_on_remote.sh"
 
 function cmd_success() {
 	say "Done"
