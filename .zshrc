@@ -131,28 +131,3 @@ source "$HOME/.zsh_aliases"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-
-# infra aws
-infra-aws() {
-    export VAULT_ADDR=https://secrets.splunkit.io
-    export VAULT_NAMESPACE=eeff/application
-    vault login -no-print -method=ldap username=$USER
-    ROLE=okta-$1-role
-    RESPONSE=$(vault read infra-aws/creds/$ROLE -format=json)
-    export AWS_ACCESS_KEY_ID=$(jq -r '.data.access_key' <<< "$RESPONSE")
-    export AWS_SECRET_ACCESS_KEY=$(jq -r '.data.secret_key' <<<     "$RESPONSE")
-    export AWS_SESSION_TOKEN=$(jq -r '.data.security_token' <<< "$RESPONSE")
-    export AWS_DEFAULT_REGION=us-west-2
-    vault token revoke -self > /dev/null
-    unset VAULT_ADDR VAULT_NAMESPACE
-}
-
-
-# okta artifactory
-export OKTA_MFA_OPTION=push
-
-export ARTIFACTORY_BASE_URL=$(jq -r .metadata.artifactory_url ~/.artifactory/config)
-username=$(jq -r .username ~/.artifactory/config)
-token=$(jq -r .token ~/.artifactory/config)
-export ARTIFACTORY_AUTHORIZATION=${username}:${token}
-export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
