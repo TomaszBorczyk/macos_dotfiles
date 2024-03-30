@@ -1,17 +1,27 @@
-
-
-###################
+##################
 ##### global #####
 ###################
+
 # delete simulation (forward)
 f11 : skhd -k "delete"
+
+# (cmd + [) and (cmd + ') to escape
+cmd - 0x27 : skhd -k "escape"
+cmd - 0x21 : skhd -k "escape"
+alt - 0x21 : skhd -k "escape"
 
 # word delete
 cmd - backspace : skhd -k "alt - backspace"
 
 # word highlight
-cmd + shift - left : skhd -k "alt + shift - left"
-cmd + shift - right : skhd -k "alt + shift - right"
+cmd + shift - left [
+	"kitty"  ~
+	* : skhd -k "alt + shift - left"
+]
+cmd + shift - right [
+	"kitty"  ~
+	* : skhd -k "alt + shift - right"
+]
 
 # word jump
 cmd - left : skhd -k "alt - left"
@@ -41,14 +51,13 @@ cmd + shift - tab [
 
 # go back
 # alt - left [
-	# "google chrome" : skhd -k "cmd - 0x21"
+#	"google chrome" : skhd -k "cmd - 0x21"
 # ]
 # 
 # # go forward
 # alt - right [
-	# "google chrome" : skhd -k "cmd - 0x1E"
+#	"google chrome" : skhd -k "cmd - 0x1E"
 # ]
-
 
 
 ##################

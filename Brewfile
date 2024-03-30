@@ -28,10 +28,8 @@ cask 'pycharm'
 brew 'nginx'
 brew 'node'
 brew 'micro'
-cask 'vagrant'
 cask 'docker'
 cask 'kitty'
-cask 'xquartz'
 
 # Rice
 cask 'hiddenbar'
@@ -39,13 +37,10 @@ cask 'stats'
 cask 'topnotch'
 
 # Automation
-cask 'hammerspoon'
 cask 'alt-tab'
 cask 'karabiner-elements'
-cask 'rectangle'
 cask 'amethyst'
 
 # Apps
 cask 'google-chrome'
-cask 'slack'
 cask 'vlc'
