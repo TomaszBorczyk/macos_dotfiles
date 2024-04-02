@@ -1,0 +1,6 @@
+[window]
+decorations = "None"
+padding = {x = 10, y = 10} 
+
+[font]
+size = 16

@@ -66,13 +66,31 @@ cmd + shift - tab [
 #  kitty terminal normal commands:
 cmd - c [
 	"kitty" : skhd -k "ctrl - c"
+	"alacritty" : skhd -k "ctrl - c"
+]
+# tmux leader
+cmd - b [
+	"alacritty" : skhd -k "ctrl - b"
 ]
 cmd - r [
 	"kitty" : skhd -k "ctrl - r"
+	"alacritty" : skhd -k "ctrl - r"
 ]
 cmd - w [
 	"kitty" : skhd -k "ctrl - w"
+	"alacritty" : skhd -k "ctrl - w"
 ]
+cmd + shift - e [
+	"alacritty" : skhd -k "ctrl + shift - e"
+]
+cmd + shift - o [
+	"alacritty" : skhd -k "ctrl + shift - o"
+]
+cmd + shift - w [
+	"alacritty" : skhd -k "ctrl - h"
+]
+
+
 
 # alt - left [
 	# "kitty" : skhd -k "ctrl + shift - left"
