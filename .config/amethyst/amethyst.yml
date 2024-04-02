@@ -1,0 +1,28 @@
+layouts:
+  - fullscreen
+  - tall
+  - wide
+
+mod1:
+  - option
+  - control
+
+cycle-layout:
+  mod: mod1
+  key: space
+
+throw-screen-1:
+  mod: mod1
+  key: "." 
+  
+throw-screen-2:
+  mod: mod1
+  key: "," 
+
+increase-main:
+  mod: ""
+  key: ""
+
+decrease-main:
+  mod: ""
+  key: ""

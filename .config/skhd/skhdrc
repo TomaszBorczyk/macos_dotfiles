@@ -5,11 +5,6 @@
 # delete simulation (forward)
 f11 : skhd -k "delete"
 
-# (cmd + [) and (cmd + ') to escape
-cmd - 0x27 : skhd -k "escape"
-cmd - 0x21 : skhd -k "escape"
-alt - 0x21 : skhd -k "escape"
-
 # word delete
 cmd - backspace : skhd -k "alt - backspace"
 
@@ -24,9 +19,15 @@ cmd + shift - right [
 ]
 
 # word jump
-cmd - left : skhd -k "alt - left"
-cmd - right : skhd -k "alt - right"
-
+cmd - left [
+	"google chrome" ~
+	* : skhd -k "alt - left"
+]
+cmd - right [
+	"google chrome" ~
+	* : skhd -k "alt - right"
+]
+#
 
 #####################
 ##### shortcuts #####
@@ -39,7 +40,7 @@ cmd - right : skhd -k "alt - right"
 ##################
 ##### chrome #####
 ##################
-# text tab
+# next tab
 cmd - tab [
 	"google chrome" : skhd -k "ctrl - tab"
 ]
@@ -48,16 +49,6 @@ cmd - tab [
 cmd + shift - tab [
 	"google chrome" : skhd -k "ctrl + shift - tab"
 ]
-
-# go back
-# alt - left [
-#	"google chrome" : skhd -k "cmd - 0x21"
-# ]
-# 
-# # go forward
-# alt - right [
-#	"google chrome" : skhd -k "cmd - 0x1E"
-# ]
 
 
 ##################
@@ -89,17 +80,6 @@ cmd + shift - o [
 cmd + shift - w [
 	"alacritty" : skhd -k "ctrl - h"
 ]
-
-
-
-# alt - left [
-	# "kitty" : skhd -k "ctrl + shift - left"
-# ]
-# alt - right [
-	# "kitty" : skhd -k "ctrl + shift - right"
-# ]
-
-
 
 
 ####################
