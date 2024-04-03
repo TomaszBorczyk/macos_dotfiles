@@ -12,8 +12,14 @@ cmd + shift - left : skhd -k "alt + shift - left"
 cmd + shift - right : skhd -k "alt + shift - right"
 
 # word jump
-cmd - left : skhd -k "alt - left"
-cmd - right : skhd -k "alt - right"
+cmd - left [
+	"google chrome" ~
+	* : skhd -k "alt - left"
+]
+cmd - right [
+	"google chrome" ~
+	* : skhd -k "alt - right
+]
 
 #####################
 ##### shortcuts #####
