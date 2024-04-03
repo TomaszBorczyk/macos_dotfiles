@@ -1,7 +1,6 @@
-##################
+###################
 ##### global #####
 ###################
-
 # delete simulation (forward)
 f11 : skhd -k "delete"
 
@@ -9,38 +8,22 @@ f11 : skhd -k "delete"
 cmd - backspace : skhd -k "alt - backspace"
 
 # word highlight
-cmd + shift - left [
-	"kitty"  ~
-	* : skhd -k "alt + shift - left"
-]
-cmd + shift - right [
-	"kitty"  ~
-	* : skhd -k "alt + shift - right"
-]
+cmd + shift - left : skhd -k "alt + shift - left"
+cmd + shift - right : skhd -k "alt + shift - right"
 
 # word jump
-cmd - left [
-	"google chrome" ~
-	* : skhd -k "alt - left"
-]
-cmd - right [
-	"google chrome" ~
-	* : skhd -k "alt - right"
-]
-#
+cmd - left : skhd -k "alt - left"
+cmd - right : skhd -k "alt - right"
 
 #####################
 ##### shortcuts #####
 #####################
 
-# spawn kitty
-#cmd + shift - l : /opt/homebrew/bin/kitty --single-instance
-
 
 ##################
 ##### chrome #####
 ##################
-# next tab
+# text tab
 cmd - tab [
 	"google chrome" : skhd -k "ctrl - tab"
 ]
@@ -50,6 +33,15 @@ cmd + shift - tab [
 	"google chrome" : skhd -k "ctrl + shift - tab"
 ]
 
+# go back
+# alt - left [
+	# "google chrome" : skhd -k "cmd - 0x21"
+# ]
+# 
+# # go forward
+# alt - right [
+	# "google chrome" : skhd -k "cmd - 0x1E"
+# ]
 
 ##################
 ##### kitty  #####
@@ -59,9 +51,11 @@ cmd - c [
 	"kitty" : skhd -k "ctrl - c"
 	"alacritty" : skhd -k "ctrl - c"
 ]
+
 # tmux leader
-cmd - b [
-	"alacritty" : skhd -k "ctrl - b"
+# tmux does not understand cmd key, need to map to ctrl
+cmd - a [
+	"alacritty" : skhd -k "ctrl - a"
 ]
 cmd - r [
 	"kitty" : skhd -k "ctrl - r"
@@ -81,7 +75,6 @@ cmd + shift - w [
 	"alacritty" : skhd -k "ctrl - h"
 ]
 
-
 ####################
 ##### pycharm  #####
 ####################
@@ -89,3 +82,4 @@ cmd + shift - w [
 cmd - space [
 	"pycharm" : skhd -k "alt - space"
 ]
+

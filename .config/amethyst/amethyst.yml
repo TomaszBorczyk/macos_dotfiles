@@ -15,6 +15,14 @@ throw-screen-1:
   mod: mod1
   key: "." 
   
+throw-space-1:
+  mod: mod1
+  key: "l" 
+
+throw-space-2:
+  mod: mod1
+  key: ";" 
+
 throw-screen-2:
   mod: mod1
   key: "," 
@@ -22,6 +30,11 @@ throw-screen-2:
 increase-main:
   mod: ""
   key: ""
+
+expand-main:
+  mod: ""
+  key: ""
+
 
 decrease-main:
   mod: ""

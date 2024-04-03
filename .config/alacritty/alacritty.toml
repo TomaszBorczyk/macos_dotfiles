@@ -1,6 +1,14 @@
+[shell]
+program = "/bin/zsh"
+args = ["-l", "-c", "tmux a | tmux"] 
+
+[selection]
+save_to_clipboard = true
+
 [window]
 decorations = "None"
 padding = {x = 10, y = 10} 
 
 [font]
-size = 16
+size = 18 
+normal = {family = "BlexMono Nerd Font", style = "Regular" }
