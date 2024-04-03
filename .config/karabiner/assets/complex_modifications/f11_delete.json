@@ -1,1 +1,0 @@
-{"title":"delete key simulation at f11","rules":[{"description":"delete key simulation at f11","manipulators":[{"type":"basic","from":{"key_code":"f11"},"to":[{"repeat":false,"key_code":"delete_or_backspace","modifiers":["fn","left_alt"]}]}]}]}
