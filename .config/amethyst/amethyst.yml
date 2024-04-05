@@ -13,7 +13,7 @@ cycle-layout:
 
 throw-screen-1:
   mod: mod1
-  key: "." 
+  key: "," 
   
 throw-space-1:
   mod: mod1
@@ -25,7 +25,7 @@ throw-space-2:
 
 throw-screen-2:
   mod: mod1
-  key: "," 
+  key: "." 
 
 increase-main:
   mod: ""

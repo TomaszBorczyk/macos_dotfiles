@@ -10,5 +10,6 @@ decorations = "None"
 padding = {x = 10, y = 10} 
 
 [font]
-size = 18 
+size = 17 
 normal = {family = "BlexMono Nerd Font", style = "Regular" }
+#normal = {family = "Liga SFMono Nerd Font", style = "Regular" }
