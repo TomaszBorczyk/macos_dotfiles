@@ -14,11 +14,18 @@ cmd + shift - right : skhd -k "alt + shift - right"
 # word jump
 cmd - left [
 	"google chrome" ~
+	"librewolf" ~
 	* : skhd -k "alt - left"
 ]
 cmd - right [
 	"google chrome" ~
+	"librewolf" ~
 	* : skhd -k "alt - right
+]
+
+# new incognito window
+cmd + shift - n [
+	"librewolf" : skhd -k "cmd + shift - p"
 ]
 
 #####################
@@ -29,14 +36,16 @@ cmd - right [
 ##################
 ##### chrome #####
 ##################
-# text tab
+# next tab
 cmd - tab [
 	"google chrome" : skhd -k "ctrl - tab"
+	"librewolf" : skhd -k "ctrl - tab"
 ]
 
 # previous tab
 cmd + shift - tab [
 	"google chrome" : skhd -k "ctrl + shift - tab"
+	"librewolf" : skhd -k "ctrl + shift - tab"
 ]
 
 # go back
