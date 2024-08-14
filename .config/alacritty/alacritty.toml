@@ -1,6 +1,6 @@
 [shell]
 program = "/bin/zsh"
-args = ["-l", "-c", "tmux a | tmux"] 
+args = ["-l", "-c", "tmux a || tmux"] 
 
 [selection]
 save_to_clipboard = true
